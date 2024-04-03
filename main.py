@@ -19,6 +19,9 @@ def divide(x,y):
     """Function to divide two numbers"""
     return x / y
 
+def multiply(x,y):
+    """Function to multiply two numbers"""
+    return x * y
 
 def modulo(x):
     """Function to get absolute value of x"""
@@ -36,6 +39,7 @@ def factorial(x):
 print("Select operation:")
 print("1. Add")
 print("2. Sqrt")
+print("4. Multiply")
 print("4. Division")
 print("8. Inverse")
 
@@ -45,12 +49,15 @@ print("8. Inverse")
 while True:
     choice = input("Enter choice (1- ADD MORE ): ")
 
-    if choice in ('1'):
+    if choice in ('1', '4'):
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
 
         if choice == '1':
             print("Result:", add(num1, num2))
+
+        elif choice == '4':
+            print("Result:", multiply(num1 , num2))
 
         break
     elif choice in ('2','8'):
