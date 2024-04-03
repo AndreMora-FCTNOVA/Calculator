@@ -36,8 +36,8 @@ def factorial(x):
 print("Select operation:")
 print("1. Add")
 print("2. Sqrt")
+print("3. Division")
 print("4. Modulo")
-print("4. Division")
 print("8. Inverse")
 
 
