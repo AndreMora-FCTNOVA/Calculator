@@ -11,10 +11,13 @@ def inverse(x):
     return 1/x
 
 
-
 def mySqrt(x):
     """Function to square root"""
     return math.sqrt(x)
+
+def subtract(x, y):
+    """Function to subtract two numbers"""
+    return x - y
 
 
 
@@ -22,6 +25,7 @@ def mySqrt(x):
 print("Select operation:")
 print("1. Add")
 print("2. Sqrt")
+print("3. Subtract")
 print("8. Inverse")
 
 
@@ -30,14 +34,16 @@ print("8. Inverse")
 while True:
     choice = input("Enter choice (1- ADD MORE ): ")
 
-    if choice in ('1'):
+    if choice in ('1', '3'):
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
 
         if choice == '1':
             print("Result:", add(num1, num2))
 
-        break
+        elif choice == '3':
+            print("Result:", subtract(num1, num2))
+
     elif choice in ('2','8'):
         num1 = float(input("Enter the number: "))
 
@@ -46,6 +52,6 @@ while True:
         elif choice == '8':
             print("Result:", inverse(num1))
 
-
     else:
         print("Invalid input. Please enter a valid number (1/2/3/4).")
+        break
