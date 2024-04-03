@@ -38,6 +38,7 @@ print("1. Add")
 print("2. Sqrt")
 print("3. Division")
 print("4. Modulo")
+print("7. Factorial")
 print("8. Inverse")
 
 
