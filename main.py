@@ -40,11 +40,12 @@ def factorial(x):
 print("Select operation:")
 print("1. Add")
 print("2. Sqrt")
+
+print("4. Modulo")
+print("7. Factorial")
 print("4. Multiply")
 print("5. Division")
 print("8. Inverse")
-
-
 
 
 while True:
@@ -82,6 +83,7 @@ while True:
 
             if choice == '4':
                 print("Result:", modulo(num1))
+
 
     elif choice in ('7'):
         num1 = float(input("Enter the number: "))
