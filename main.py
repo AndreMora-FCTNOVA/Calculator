@@ -3,8 +3,11 @@ import math
 
 def add(x, y):
     """Function to add two numbers"""
+
     return x + y
 
+def myPow(x,y):
+    return math.pow(x,y)
 
 def inverse(x):
     """Function to do the inverse"""
@@ -40,15 +43,18 @@ print("3. Division")
 print("4. Modulo")
 print("7. Factorial")
 print("8. Inverse")
+print("9. Pow")
 
 
 while True:
     choice = input("Enter choice (1- ADD MORE ): ")
 
-    if choice in ('1'):
+    if choice in ('1','9'):
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
 
+        if choice == '9':
+            print("Result:", myPow(num1, num2))
         if choice == '1':
             print("Result:", add(num1, num2))
 
