@@ -6,17 +6,35 @@ def add(x, y):
     return x + y
 
 
+def inverse(x):
+    """Function to do the inverse"""
+    return 1/x
+
+
+
 def mySqrt(x):
     """Function to square root"""
     return math.sqrt(x)
+def divide(x,y):
+    """Function to divide two numbers"""
+    return x / y
 
 
+
+def factorial(x):
+    result = x
+    for i in range(x-1):
+        print(result)
+        print(i+1)
+        result = result * (i+1)
+    return result
 
 
 print("Select operation:")
 print("1. Add")
 print("2. Sqrt")
-
+print("4. Division")
+print("8. Inverse")
 
 
 while True:
@@ -30,11 +48,27 @@ while True:
             print("Result:", add(num1, num2))
 
         break
-    elif choice in ('2'):
+    elif choice in ('2','8'):
         num1 = float(input("Enter the number: "))
 
         if choice == '2':
             print("Result:", mySqrt(num1))
+        elif choice == '8':
+            print("Result:", inverse(num1))
+
+
+    elif choice in ('3'):
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+
+        if choice == '3':
+            print("Result:", divide(num1, num2))
+
+    elif choice in ('7'):
+        num1 = float(input("Enter the number: "))
+
+        if choice == '7':
+            print(("Result:", factorial(int(num1))))
 
     else:
         print("Invalid input. Please enter a valid number (1/2/3/4).")
