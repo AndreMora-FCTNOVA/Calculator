@@ -24,6 +24,10 @@ def subtract(x, y):
     return x - y
 
 
+def multiply(x,y):
+    """Function to multiply two numbers"""
+    return x * y
+
 def modulo(x):
     """Function to get absolute value of x"""
     return abs(x)
@@ -43,13 +47,16 @@ print("2. Sqrt")
 print("3. Subtract")
 print("3. Division")
 print("4. Modulo")
+print("7. Factorial")
+print("4. Multiply")
+print("5. Division")
 print("8. Inverse")
 
 
 while True:
     choice = input("Enter choice (1- ADD MORE ): ")
 
-    if choice in ('1', '3'):
+    if choice in ('1', '3', '4'):
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
 
@@ -58,6 +65,9 @@ while True:
 
         elif choice == '3':
             print("Result:", subtract(num1, num2))
+
+        elif choice == '4':
+            print("Result:", multiply(num1, num2))
 
     elif choice in ('2','8'):
         num1 = float(input("Enter the number: "))
@@ -68,19 +78,19 @@ while True:
             print("Result:", inverse(num1))
 
 
+    elif choice in ('5'):
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+
+        if choice == '5':
+            print("Result:", divide(num1, num2))
+
     elif choice in ('4'):
             num1 = float(input("Enter first number: "))
 
             if choice == '4':
                 print("Result:", modulo(num1))
 
-
-    elif choice in ('3'):
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
-
-        if choice == '3':
-            print("Result:", divide(num1, num2))
 
     elif choice in ('7'):
         num1 = float(input("Enter the number: "))
