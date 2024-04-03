@@ -57,7 +57,7 @@ while True:
             print("Result:", add(num1, num2))
 
         elif choice == '4':
-            print("Result:", multiply(num1 , num2))
+            print("Result:", multiply(num1, num2))
 
         break
     elif choice in ('2','8'):
