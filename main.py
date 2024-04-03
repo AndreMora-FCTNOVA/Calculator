@@ -20,6 +20,9 @@ def divide(x,y):
     return x / y
 
 
+def modulo(x):
+    """Function to get absolute value of x"""
+    return abs(x)
 
 def factorial(x):
     result = x
@@ -33,6 +36,7 @@ def factorial(x):
 print("Select operation:")
 print("1. Add")
 print("2. Sqrt")
+print("4. Modulo")
 print("4. Division")
 print("8. Inverse")
 
@@ -55,6 +59,13 @@ while True:
             print("Result:", mySqrt(num1))
         elif choice == '8':
             print("Result:", inverse(num1))
+
+
+    elif choice in ('4'):
+            num1 = float(input("Enter first number: "))
+
+            if choice == '4':
+                print("Result:", modulo(num1))
 
 
     elif choice in ('3'):
