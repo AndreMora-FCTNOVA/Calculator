@@ -3,7 +3,6 @@ import math
 
 def add(x, y):
     """Function to add two numbers"""
-
     return x + y
 
 def myPow(x,y):
@@ -22,6 +21,14 @@ def divide(x,y):
     """Function to divide two numbers"""
     return x / y
 
+def subtract(x, y):
+    """Function to subtract two numbers"""
+    return x - y
+
+
+def multiply(x,y):
+    """Function to multiply two numbers"""
+    return x * y
 
 def modulo(x):
     """Function to get absolute value of x"""
@@ -39,8 +46,10 @@ def factorial(x):
 print("Select operation:")
 print("1. Add")
 print("2. Sqrt")
-print("3. Division")
-print("4. Modulo")
+print("3. Subtract")
+print("4. Multiply")
+print("5. Division")
+print("6. Modulo")
 print("7. Factorial")
 print("8. Inverse")
 print("9. Pow")
@@ -49,7 +58,7 @@ print("9. Pow")
 while True:
     choice = input("Enter choice (1- ADD MORE ): ")
 
-    if choice in ('1','9'):
+    if choice in ('1', '3', '4','9'):
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
 
@@ -58,7 +67,12 @@ while True:
         if choice == '1':
             print("Result:", add(num1, num2))
 
-        break
+        elif choice == '3':
+            print("Result:", subtract(num1, num2))
+
+        elif choice == '4':
+            print("Result:", multiply(num1, num2))
+
     elif choice in ('2','8'):
         num1 = float(input("Enter the number: "))
 
@@ -90,3 +104,4 @@ while True:
 
     else:
         print("Invalid input. Please enter a valid number (1/2/3/4).")
+        break
