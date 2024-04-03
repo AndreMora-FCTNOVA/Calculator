@@ -11,6 +11,9 @@ def inverse(x):
     return 1/x
 
 
+def Square(x):
+    """Function to calculate the square of a number"""
+    return x ** 2
 
 def mySqrt(x):
     """Function to square root"""
@@ -38,6 +41,8 @@ print("1. Add")
 print("2. Sqrt")
 print("3. Division")
 print("4. Modulo")
+print("6. Square")
+print("7. Factorial")
 print("8. Inverse")
 
 
@@ -74,6 +79,13 @@ while True:
 
         if choice == '3':
             print("Result:", divide(num1, num2))
+
+    elif choice in ('6'):
+        num1 = float(input("Enter the number: "))
+
+        if choice == '6':
+            print("Result:", Square(num1))
+
 
     elif choice in ('7'):
         num1 = float(input("Enter the number: "))
