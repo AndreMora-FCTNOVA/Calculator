@@ -58,7 +58,7 @@ print("9. Pow")
 while True:
     choice = input("Enter choice (1- ADD MORE ): ")
 
-    if choice in ('1', '3', '4','9'):
+    if choice in ('1', '3', '4','5','9'):
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
 
@@ -72,6 +72,8 @@ while True:
 
         elif choice == '4':
             print("Result:", multiply(num1, num2))
+        elif choice == '5':
+            print("Result:", divide(num1, num2))
 
     elif choice in ('2','8'):
         num1 = float(input("Enter the number: "))
@@ -85,16 +87,10 @@ while True:
     elif choice in ('4'):
             num1 = float(input("Enter first number: "))
 
-            if choice == '4':
+            if choice == '6':
                 print("Result:", modulo(num1))
 
 
-    elif choice in ('3'):
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
-
-        if choice == '3':
-            print("Result:", divide(num1, num2))
 
     elif choice in ('7'):
         num1 = float(input("Enter the number: "))
